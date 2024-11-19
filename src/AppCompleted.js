@@ -1,6 +1,7 @@
 //const Dummy_URL = "https://dummyjson.com/todos?limit=5";
 
 import React, { useState, useEffect } from "react";
+import axios from 'axios'
 
 const ToggleTodo = () => {
 
@@ -22,6 +23,16 @@ const ToggleTodo = () => {
             })
             .catch((error) => console.log("Error Found", error))
     }, [])
+
+    // useEffect(()=>{
+    //     axios.get(Dummy_URL)
+    //     .then((response)=>{
+    //         setData(response.data)
+    //     })
+    //     .catch(error=> console.log("Error found"))
+    // },[])
+
+    console.log(data, "dataaxios")
 
     //console.log(data, "originalData")
 
