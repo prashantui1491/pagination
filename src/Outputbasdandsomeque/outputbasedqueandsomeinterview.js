@@ -4,30 +4,30 @@ const CountryStateCitySelector = () => {
 
 // Q1: Remove duplicate numbers
 
-// const arrayList = [1,1,2,3,56, 22, 23, 23]
+const arrayList = [1,1,2,3,56, 22, 23, 23]
 
-// const uniqueArray = [...new Set(arrayList)] // built in function
+const uniqueArray = [...new Set(arrayList)] // built in function
 
-// function removeDupArray(arr){
-//   const uniqueArray1 = []
+function removeDupArray(arr){
+  const uniqueArray1 = []
 
-//   for(let i = 0; i< arr.length; i++){
-//     let isDuplicate = false
+  for(let i = 0; i< arr.length; i++){
+    let isDuplicate = false
 
-//     for(let j = 0; j< uniqueArray1.length; j++){
-//       if(arr[i] === uniqueArray1[j]){
-//         isDuplicate = true;
-//         break
-//       }
-//     }
-//     if(!isDuplicate){
-//       uniqueArray1.push(arr[i])
-//     }
-//   }
-//   return uniqueArray1
-// }
+    for(let j = 0; j< uniqueArray1.length; j++){
+      if(arr[i] === uniqueArray1[j]){
+        isDuplicate = true;
+        break
+      }
+    }
+    if(!isDuplicate){
+      uniqueArray1.push(arr[i])
+    }
+  }
+  return uniqueArray1
+}
 
-// const result = removeDupArray(arrayList)
+const result = removeDupArray(arrayList)
 
 //Q2: Palindrome check
 

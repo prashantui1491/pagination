@@ -118,7 +118,7 @@
 // export default ParentComponent;
 
 import React from "react";
-import ExpensiveCalculationComponent from './Child'
+import ExpensiveCalculationComponent from '../Customhook/Child'
 
 function App(){
     return (
