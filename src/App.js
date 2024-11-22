@@ -1,17 +1,18 @@
 import React from "react";
-import DisplayFetchedInfo from "./Customhook/DisplayFetchedInfo"
+import { Themeprovider } from "./Usecontectex1/Themeprovider";
+import Toggletheme from "./Usecontectex1/Toggletheme";
+import Timerstartpause from './timerstartpause'
 
 function App() {
 
-    const handleClick = () =>{
+    const handleClick = () => {
         alert("button Clicked")
-
     }
     return (
         <div className="App">
-            <DisplayFetchedInfo/>
-
-
+           <Themeprovider>
+           <Timerstartpause/>
+           </Themeprovider>
         </div>
     );
 }

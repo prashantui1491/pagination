@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom'; // For better assertions
 import SimpleButton from './index';
 
-describe('SimpleButton Component', () => {
+describe.skip('SimpleButton Component', () => {
   test('renders the button with the correct label', () => {
     render(<SimpleButton label="buttonLable" />);
     
@@ -25,22 +25,24 @@ describe('SimpleButton Component', () => {
   });
 });
 
-describe("Simple Button component test", ()=>{
-  test("render text test", ()=>{
-    render(<SimpleButton label="buttonlabel"/>)
+describe("Render button and click test", ()=>{
+  test("Render button", ()=>{
+    render(<SimpleButton label={"buttonlable"}/>)
 
-    const buttonElement = screen.getByText("buttonlabel")
-    expect(buttonElement).toBeInTheDocument()
+    const getButtonElement = screen.getByText("buttonlable")
+    expect(getButtonElement).toBeInTheDocument()
   })
 
-  test("buttonCliclTest", ()=>{
-
+  test("Click event test",()=>{
     const handleClick = jest.fn()
-    render(<SimpleButton onClick={handleClick} label="Submitbutton"/>)
+    render(<SimpleButton  onClick= {handleClick} label="submit"/>)
+    
 
-    const buttonElement = screen.getByText("Submitbutton")
-    fireEvent.click(buttonElement)
+    const buttonElement = screen.getByText("submit")
+     fireEvent.click(buttonElement)
 
-    expect(handleClick).toHaveBeenCalledTimes(1);
+     expect(handleClick).toHaveBeenCalledTimes(1)
   })
 })
+
+
