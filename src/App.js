@@ -2,6 +2,7 @@ import React from "react";
 import { Themeprovider } from "./Usecontectex1/Themeprovider";
 import Toggletheme from "./Usecontectex1/Toggletheme";
 import Timerstartpause from './timerstartpause'
+import GroupingProducts from './GroupingProducts'
 
 function App() {
 
@@ -10,9 +11,10 @@ function App() {
     }
     return (
         <div className="App">
-           <Themeprovider>
+           {/* <Themeprovider>
            <Timerstartpause/>
-           </Themeprovider>
+           </Themeprovider> */}
+           <GroupingProducts/>
         </div>
     );
 }

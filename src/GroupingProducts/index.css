@@ -1,0 +1,11 @@
+
+
+.body-123 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+    position: relative;
+    flex-direction: column;
+
+}
