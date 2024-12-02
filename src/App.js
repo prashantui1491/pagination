@@ -3,6 +3,7 @@ import { Themeprovider } from "./Usecontectex1/Themeprovider";
 import Toggletheme from "./Usecontectex1/Toggletheme";
 import Timerstartpause from './timerstartpause'
 import GroupingProducts from './GroupingProducts'
+import GenerateTable from './GenerataTable'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
            {/* <Themeprovider>
            <Timerstartpause/>
            </Themeprovider> */}
-           <GroupingProducts/>
+           <GenerateTable/>
         </div>
     );
 }
