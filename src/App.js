@@ -4,6 +4,7 @@ import Toggletheme from "./Usecontectex1/Toggletheme";
 import Timerstartpause from './timerstartpause'
 import GroupingProducts from './GroupingProducts'
 import GenerateTable from './GenerataTable'
+import CssTest from './Css'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
            {/* <Themeprovider>
            <Timerstartpause/>
            </Themeprovider> */}
-           <GenerateTable/>
+           <CssTest/>
         </div>
     );
 }

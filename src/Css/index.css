@@ -1,0 +1,43 @@
+/* Flex */
+
+/* .body1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.cont1{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rebeccapurple;
+    text-align: center;
+    align-content: center;
+}
+.cont2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rebeccapurple;
+    text-align: center;
+    align-content: center;
+}
+.cont3{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rebeccapurple;
+    text-align: center;
+    align-content: center;
+} */
+
+/* Grid */
+
+.body1{
+    display: grid;
+   grid-template-rows: 100px 100px 100px 100px 100px 100px;
+   grid-template-columns: 100px 100px 100px 100px 100px 100px;
+}
+
+.cont1{
+    grid-row: 1 / 3;
+    grid-column: span 2;
+}

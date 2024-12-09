@@ -1,4 +1,4 @@
-//Hooks
+// //Hooks
 
 // import React, {useState, useEffect} from "react"
 
@@ -18,7 +18,7 @@
 //     )
 // }
 
-// export default Timer
+// // export default Timer
 
 // import React, {useRef} from "react"
 
@@ -99,38 +99,38 @@
 
 // export default CounterReducer
 
-// import React, { useState, useCallback } from "react";
-// import Child from "./Child";
+import React, { useState, useCallback } from "react";
+import Child from "./Child";
 
-// const ParentComponent = () => {
-//     const [count, setCount] = useState(0);
+const ParentComponent = () => {
+    const [count, setCount] = useState(0);
 
-//     const increment = useCallback(() => setCount(count => count + 1), []);
+    const increment = useCallback(() => setCount(count => count + 1), []);
 
-//     return (
-//         <div>
-//             {count}
-//             <Child onIncrement={increment} />
-//         </div>
-//     );
-// };
-
-// export default ParentComponent;
-
-import React from "react";
-import ExpensiveCalculationComponent from '../Customhook/Child'
-
-function App(){
     return (
         <div>
-
-        <ExpensiveCalculationComponent number={4}/>
-
+            {count}
+            <Child onIncrement={increment} />
         </div>
-    )
-}
+    );
+};
 
-export default App
+export default ParentComponent;
+
+// import React from "react";
+// import ExpensiveCalculationComponent from '../Customhook/Child'
+
+// function App(){
+//     return (
+//         <div>
+
+//         <ExpensiveCalculationComponent number={4}/>
+
+//         </div>
+//     )
+// }
+
+// export default App
 
 
 
