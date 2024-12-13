@@ -5,6 +5,7 @@ import Timerstartpause from './timerstartpause'
 import GroupingProducts from './GroupingProducts'
 import GenerateTable from './GenerataTable'
 import CssTest from './Css'
+import CartItemPriceAdd from './Cartitemraku'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
            {/* <Themeprovider>
            <Timerstartpause/>
            </Themeprovider> */}
-           <CssTest/>
+           <CartItemPriceAdd/>
         </div>
     );
 }
