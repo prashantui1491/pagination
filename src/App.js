@@ -17,7 +17,7 @@ function App() {
            {/* <Themeprovider>
            <Timerstartpause/>
            </Themeprovider> */}
-           <CartItemPriceAdd/>
+           <GenerateTable/>
         </div>
     );
 }
