@@ -6,18 +6,20 @@ import GroupingProducts from './GroupingProducts'
 import GenerateTable from './GenerataTable'
 import CssTest from './Css'
 import CartItemPriceAdd from './Cartitemraku'
+import Pagination from './Pagination'
 
 function App() {
 
-    const handleClick = () => {
-        alert("button Clicked")
-    }
+    //const items = Array.from({ length: 50 }, (_, i) => `Item ${i + 1}`); // Example items
+
+    const items = Array.from({length: 50}, (_, i)=>`Items ${i+1}`)
+
     return (
         <div className="App">
            {/* <Themeprovider>
            <Timerstartpause/>
            </Themeprovider> */}
-           <GenerateTable/>
+           <Pagination itemsPerPage={10} items={items} />
         </div>
     );
 }
