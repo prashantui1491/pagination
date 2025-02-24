@@ -314,7 +314,7 @@ const result = removeDupArray(arrayList)
 // console.log(testArray[2]());
 
 
-// var global scope and let const block scopt and will npt be available in window object when we try to access by this key word
+// var global scope and let const block scopt and will npt be available in window object when we try to access by this key word 
 
 /* var a = 1
 const b = 2 */
