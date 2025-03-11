@@ -12,10 +12,14 @@ import TableAgGrid from './AGgridtable/index'
 import ToggleTodo from './Datafetchcompletedfilter/AppCompleted'
 import WithoutThrottling from './Trottling/WithoutThrottling'
 import WithThrottlinginbuilt from './Trottling/WithThrottlinginbuilt'
-import withBorder from "./Higherordercompo/HOC";
-import Message from "./Higherordercompo/Child";
+// import withBorder from "./Higherordercompo/HOC";
+// import Message from "./Higherordercompo/Child";
 
-const Enhancemessage = withBorder(Message)
+import MessagesProvider from './Usecontexttodo/MessagesProvider'
+import AppleClientInterview from "./AppleClientInterview";
+
+// const Enhancemessage = withBorder(Message)
+
 
 
 const  App = () => {
@@ -30,8 +34,10 @@ const  App = () => {
            <Timerstartpause/>
            </Themeprovider> */}
            {/* <Pagination itemsPerPage={10} items={items} /> */}
-          <Enhancemessage text="Hi am from Higher orde component"/>
+          {/* <Enhancemessage text="Hi am from Higher orde component"/> */}
 
+          {/* <MessagesProvider/> */}
+            <AppleClientInterview />
            
         </div>
     );
