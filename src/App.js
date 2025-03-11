@@ -15,10 +15,12 @@ import WithThrottlinginbuilt from './Trottling/WithThrottlinginbuilt'
 // import withBorder from "./Higherordercompo/HOC";
 // import Message from "./Higherordercompo/Child";
 
-import MessagesProvider from './Usecontexttodo/MessagesProvider'
+// import MessagesProvider from './Usecontexttodo/MessagesProvider'
 import AppleClientInterview from "./AppleClientInterview";
 
 // const Enhancemessage = withBorder(Message)
+
+import MessageProvider from './MessageProvider/MessageProvider'
 
 
 
@@ -37,7 +39,9 @@ const  App = () => {
           {/* <Enhancemessage text="Hi am from Higher orde component"/> */}
 
           {/* <MessagesProvider/> */}
-            <AppleClientInterview />
+            {/* <AppleClientInterview /> */}
+
+        <MessageProvider/>
            
         </div>
     );
