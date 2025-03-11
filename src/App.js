@@ -22,6 +22,8 @@ import AppleClientInterview from "./AppleClientInterview";
 
 import MessageProvider from './MessageProvider/MessageProvider'
 
+import CounterProvider from './Counterappcontextreducer/CounterProvider'
+
 
 
 const  App = () => {
@@ -41,7 +43,7 @@ const  App = () => {
           {/* <MessagesProvider/> */}
             {/* <AppleClientInterview /> */}
 
-        <MessageProvider/>
+        <CounterProvider/>
            
         </div>
     );
