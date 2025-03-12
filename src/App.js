@@ -25,6 +25,7 @@ import MessageProvider from './MessageProvider/MessageProvider'
 import CounterProvider from './Counterappcontextreducer/CounterProvider'
 import Formhook1 from "./Formhook/index1";
 import Formhook2 from "./Formhook/index2";
+import Card1 from './Readlessreadmore/index1'
 
 
 
@@ -45,7 +46,7 @@ const  App = () => {
           {/* <MessagesProvider/> */}
             {/* <AppleClientInterview /> */}
 
-        <Formhook2/>
+        <Card1/>
            
         </div>
     );
