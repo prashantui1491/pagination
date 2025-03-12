@@ -23,6 +23,8 @@ import AppleClientInterview from "./AppleClientInterview";
 import MessageProvider from './MessageProvider/MessageProvider'
 
 import CounterProvider from './Counterappcontextreducer/CounterProvider'
+import Formhook1 from "./Formhook/index1";
+import Formhook2 from "./Formhook/index2";
 
 
 
@@ -43,7 +45,7 @@ const  App = () => {
           {/* <MessagesProvider/> */}
             {/* <AppleClientInterview /> */}
 
-        <CounterProvider/>
+        <Formhook2/>
            
         </div>
     );
