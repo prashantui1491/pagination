@@ -20,7 +20,7 @@ import AppleClientInterview from "./AppleClientInterview";
 
 // const Enhancemessage = withBorder(Message)
 
-import MessageProvider from './MessageProvider/MessageProvider'
+//import MessageProvider from './MessageProvider/MessageProvider'
 
 import CounterProvider from './Counterappcontextreducer/CounterProvider'
 import Formhook1 from "./Formhook/index1";
@@ -29,6 +29,7 @@ import Card1 from './Readlessreadmore/index1'
 import FilterComponent from './Custumfilter/filterComponent'
 import PaginatedList from './Pagination1/index'
 import Paginationtest1 from './Pagination1/index1'
+import MessageProvider from './Messageprovidertest/MessageProvider'
 
 
 
@@ -49,7 +50,7 @@ const  App = () => {
           {/* <MessagesProvider/> */}
             {/* <AppleClientInterview /> */}
 
-        <Paginationtest1/>
+        <CounterProvider/>
            
         </div>
     );

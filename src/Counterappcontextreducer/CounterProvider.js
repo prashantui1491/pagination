@@ -21,8 +21,14 @@ const CounterProvider = () => {
         })
     }
 
+    const handleRseset = () => {
+        dispatch({
+            type: "reset"
+        })
+    }
+
     return(
-        <Countercontext.Provider value={{handleIncrement, handleDecrement, count: state.count }}>
+        <Countercontext.Provider value={{handleIncrement, handleDecrement, handleRseset,  count: state.count }}>
             <h1>Counter App with Reducer and Context</h1>
             <Counterapp/>
         </Countercontext.Provider>

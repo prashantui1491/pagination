@@ -5,8 +5,12 @@ export const CounterReducer = (state, action) => {
             count: state.count + action.payload
         }
 
-        case "decrement": return {
+        case "decrement": return state.count > 0 ?  {
             count: state.count - action.payload
+        } : state
+
+        case "reset": return {
+            count: 0
         }
 
         default: return state
