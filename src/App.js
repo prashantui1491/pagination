@@ -26,6 +26,7 @@ import CounterProvider from './Counterappcontextreducer/CounterProvider'
 import Formhook1 from "./Formhook/index1";
 import Formhook2 from "./Formhook/index2";
 import Card1 from './Readlessreadmore/index1'
+import FilterComponent from './Custumfilter/filterComponent'
 
 
 
@@ -46,7 +47,7 @@ const  App = () => {
           {/* <MessagesProvider/> */}
             {/* <AppleClientInterview /> */}
 
-        <Card1/>
+        <FilterComponent/>
            
         </div>
     );
