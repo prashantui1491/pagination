@@ -27,6 +27,8 @@ import Formhook1 from "./Formhook/index1";
 import Formhook2 from "./Formhook/index2";
 import Card1 from './Readlessreadmore/index1'
 import FilterComponent from './Custumfilter/filterComponent'
+import PaginatedList from './Pagination1/index'
+import Paginationtest1 from './Pagination1/index1'
 
 
 
@@ -47,7 +49,7 @@ const  App = () => {
           {/* <MessagesProvider/> */}
             {/* <AppleClientInterview /> */}
 
-        <FilterComponent/>
+        <Paginationtest1/>
            
         </div>
     );
