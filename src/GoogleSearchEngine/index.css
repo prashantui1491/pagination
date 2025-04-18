@@ -1,0 +1,26 @@
+.input-field{
+    width: 500px;
+    padding: 5px;
+}
+
+.result-container{
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    border: 1px solid black ;
+    padding: 5px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.result{
+    display: block;
+}
+
+.result:hover{
+    background-color: bisque;
+}
+
+.highlithe{
+    background-color: bisque;
+}
