@@ -1,0 +1,30 @@
+.header-container{
+    display: flex;
+    gap: 10px;
+}
+.header{
+    border: 1px solid black;
+    padding: 5px;
+    width: 80px;
+   text-align: center;
+   background-color: aquamarine;
+   cursor: pointer;
+}
+
+.tab-body {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 300px;
+    justify-content: center;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .error{
+    color: red;
+    margin-top: 1px;
+  }
